@@ -1,6 +1,7 @@
 package org.example.self_introduction.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -8,6 +9,7 @@ import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @Data
+@Builder
 public class ErrorResponseDTO {
 
     /**
