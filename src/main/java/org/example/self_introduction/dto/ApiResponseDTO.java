@@ -12,35 +12,39 @@ public class ApiResponseDTO<T> {
      * 코드
      * 메시지
      * 데이터
+     * 경로 - 로깅 + 에러응답과 일관성
      */
 
     private final boolean success;
     private final int statusCode;
     private final String message;
     private final T data;
+    private final String path;
 
-    private ApiResponseDTO(boolean success, int statusCode, String message, T data) {
+    private ApiResponseDTO(boolean success, int statusCode, String message, T data, String path) {
         this.success = success;
         this.statusCode = statusCode;
         this.message = message;
         this.data = data;
+        this.path = path;
     }
 
-    //    public ApiResponseDTO(ApiResponseCode code, T data) {
-//        this.success = code == ApiResponseCode.OK;
-//        this.statusCode = code.getHttpStatusCode();
-//        this.message = code.getMessage();
-//        this.data = data;
-//    }
-
-    public static <T> ApiResponseDTO<T> of(ApiResponseCode code, T data) {
+    /**
+     * 성공 응답용
+     * @param data 반환할 데이터
+     * @param path 요청 URI
+     * @return ApiResponseDTO 인스턴스
+     * @param <T> 데이터 타입
+     */
+    public static<T> ApiResponseDTO<T> success(T data, String path) {
 
         return new ApiResponseDTO<>(
-                code == ApiResponseCode.OK,
-                code.getHttpStatusCode(),
-                code.getMessage(),
-                data
+                true,
+                HttpStatus.OK.value(),
+                "요청이 성공적으로 처리 되었습니다.",
+                data,
+                path
         );
-
     }
+
 }
