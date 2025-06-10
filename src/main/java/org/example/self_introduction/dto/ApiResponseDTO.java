@@ -3,6 +3,8 @@ package org.example.self_introduction.dto;
 import lombok.*;
 import org.springframework.http.HttpStatus;
 
+import java.time.LocalDateTime;
+
 @Builder
 @Getter
 public class ApiResponseDTO<T> {
@@ -15,14 +17,15 @@ public class ApiResponseDTO<T> {
      * 경로 - 로깅 + 에러응답과 일관성
      */
 
-    private final boolean success;
+    private final LocalDateTime timestamp;
     private final int statusCode;
     private final String message;
     private final T data;
     private final String path;
 
-    private ApiResponseDTO(boolean success, int statusCode, String message, T data, String path) {
-        this.success = success;
+    private ApiResponseDTO(LocalDateTime timestamp, int statusCode, String message, T data, String path) {
+
+        this.timestamp = timestamp;
         this.statusCode = statusCode;
         this.message = message;
         this.data = data;
@@ -36,12 +39,12 @@ public class ApiResponseDTO<T> {
      * @return ApiResponseDTO 인스턴스
      * @param <T> 데이터 타입
      */
-    public static<T> ApiResponseDTO<T> success(T data, String path) {
+    public static<T> ApiResponseDTO<T> success(T data, String message, String path) {
 
         return new ApiResponseDTO<>(
-                true,
+                LocalDateTime.now(),
                 HttpStatus.OK.value(),
-                "요청이 성공적으로 처리 되었습니다.",
+                message,
                 data,
                 path
         );
