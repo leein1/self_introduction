@@ -3,5 +3,5 @@ package org.example.self_introduction.repository;
 public interface MarkdownRepository {
 
     String getMarkdown(String fileName);
-    void writeMarkdown(String markdown);
+    void writeMarkdown(String fileName, String markdown);
 }

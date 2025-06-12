@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 @Log4j2
 @Repository
@@ -23,7 +24,7 @@ public class LocalMarkdownRepository implements MarkdownRepository {
             Path file = localDir.resolve(fileName);
 
             if(!Files.exists(file)){
-                log.warn("Markdown file does not exist");
+                log.warn("마크다운 파일이 존재하지 않습니다");
                 return "";
             }
 
@@ -37,7 +38,17 @@ public class LocalMarkdownRepository implements MarkdownRepository {
     }
 
     @Override
-    public void writeMarkdown(String markdown) {
+    public void writeMarkdown(String fileName, String markdown) {
 
+        Path file = localDir.resolve(fileName);
+
+        try{
+            // 없으면 생성, 있으면 덮어쓰기
+            Files.writeString(file,markdown, StandardOpenOption.CREATE,StandardOpenOption.TRUNCATE_EXISTING);
+            log.info("Markdown을 저장했습니다");
+        }catch (Exception e){
+            log.error("마크다운 저장 실패 예외 발생");
+            throw new FileNotFoundException(fileName);
+        }
     }
 }

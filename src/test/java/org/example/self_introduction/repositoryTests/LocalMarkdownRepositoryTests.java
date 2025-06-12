@@ -19,6 +19,12 @@ public class LocalMarkdownRepositoryTests {
         String markdown = localMarkdownRepository.getMarkdown(testFileName);
         System.out.println("====[마크다운 읽기 결과]====");
         System.out.println(markdown);
-        System.out.println("===========================");    }
+        System.out.println("===========================");
+    }
+
+    @Test
+    void testWriteMarkdown(){
+        localMarkdownRepository.writeMarkdown("test.md", "write test");
+    }
 
 }
