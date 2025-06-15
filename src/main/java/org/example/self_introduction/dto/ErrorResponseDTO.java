@@ -3,13 +3,14 @@ package org.example.self_introduction.dto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.Getter;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.time.LocalDateTime;
 
 
-@Data
+@Getter
 public class ErrorResponseDTO {
 
     /**
@@ -17,7 +18,7 @@ public class ErrorResponseDTO {
      * 상태코드
      * 에러 이름
      * 에러 메시지
-     * 에러 발생 위치 || 경로?
+     * 에러 발생 위치 - 요청 들어온 경로
      */
 
     private final LocalDateTime timestamp;

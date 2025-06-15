@@ -24,6 +24,7 @@ public class LocalMarkdownRepositoryTests {
 
     @Test
     void testWriteMarkdown(){
+        
         localMarkdownRepository.writeMarkdown("test.md", "write test");
     }
 

@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
 
-@Builder
 @Getter
 public class ApiResponseDTO<T> {
 
@@ -14,7 +13,7 @@ public class ApiResponseDTO<T> {
      * 코드
      * 메시지
      * 데이터
-     * 경로 - 로깅 + 에러응답과 일관성
+     * 경로 - 로깅 + 에러응답과 일관성 / 요청 들어온 경로
      */
 
     private final LocalDateTime timestamp;
@@ -49,5 +48,7 @@ public class ApiResponseDTO<T> {
                 path
         );
     }
+
+    // 데이터가 필요없는 응답인 경우 따로 분리 해야 하는가?
 
 }
