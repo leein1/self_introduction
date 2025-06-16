@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @RestControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
+    // 경로 문자열 전처리
     private String getProcessPath(WebRequest request){
 
         return request.getDescription(false).replaceAll("uri=", "");

@@ -30,7 +30,7 @@ public class LocalMarkdownRepository implements MarkdownRepository {
 
             return Files.readString(file);
 
-        }catch (Exception e){
+        }catch (Exception e) {
             throw new FileNotFoundException(fileName);
 //            log.error("Error reading markdown file", e);
 //            return "";
@@ -46,7 +46,9 @@ public class LocalMarkdownRepository implements MarkdownRepository {
             // 없으면 생성, 있으면 덮어쓰기
             Files.writeString(file,markdown, StandardOpenOption.CREATE,StandardOpenOption.TRUNCATE_EXISTING);
             log.info("Markdown을 저장했습니다");
+
         }catch (Exception e){
+
             log.error("마크다운 저장 실패 예외 발생");
             throw new FileNotFoundException(fileName);
         }
