@@ -47,6 +47,10 @@ public class LocalMarkdownRepository implements MarkdownRepository {
             Files.writeString(file,markdown, StandardOpenOption.CREATE,StandardOpenOption.TRUNCATE_EXISTING);
             log.info("Markdown을 저장했습니다");
 
+            // 로깅 테스트
+            log.info("writeMarkdown() 레파지토리 실행");
+            log.debug("writeMarkdown() 실행 전 fileName = {}", fileName);
+
         }catch (Exception e){
 
             log.error("마크다운 저장 실패 예외 발생");
