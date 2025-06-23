@@ -10,6 +10,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Collections;
+import java.util.List;
+import java.util.stream.Stream;
 
 @Log4j2
 @Repository
@@ -56,5 +59,30 @@ public class LocalMarkdownRepository implements MarkdownRepository {
             log.error("마크다운 저장 실패 예외 발생");
             throw new FileNotFoundException(fileName);
         }
+    }
+
+    @Override
+    public List<String> listMarkdown(String fileName) {
+
+        if(!Files.exists(localDir)){
+
+            log.warn("마크다운 디렉토리가 존재하지 않음");
+            return Collections.emptyList();
+        }
+
+        try (Stream<Path> stream = Files.list(localDir)){
+
+        }catch (Exception e){
+
+            log.error("<UNK> <UNK> <UNK> <UNK> <UNK>");
+        }
+
+
+        return List.of();
+    }
+
+    @Override
+    public void deleteMarkdown(String fileName) {
+
     }
 }
