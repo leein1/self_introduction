@@ -21,6 +21,7 @@ public class ErrorResponseDTO {
      * 에러 발생 위치 - 요청 들어온 경로
      */
 
+
     private final LocalDateTime timestamp;
     private final int statusCode;
     private final String error;

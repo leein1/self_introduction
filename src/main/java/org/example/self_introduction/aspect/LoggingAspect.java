@@ -17,8 +17,15 @@ public class LoggingAspect {
     @Pointcut("execution(public * org.example.self_introduction..*(..))")
     private void allPublicMethods(){}
 
+    /**
+     *
+     * @param pjp
+     * @return
+     * @throws Throwable
+     */
     @Around("allPublicMethods()")
     public Object logAround(ProceedingJoinPoint pjp) throws Throwable {
+
         String sig = pjp.getSignature().toShortString();
         logger.info("[START] {}", sig);
         long start = System.currentTimeMillis();
