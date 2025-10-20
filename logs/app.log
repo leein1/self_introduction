@@ -1,48 +1,13 @@
-2025-07-27 22:59:50.360 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5135 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 22:59:50.366 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 22:59:51.813 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 22:59:51.987 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 22:59:52.050 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 2.015 seconds (process running for 3.353)
-2025-07-27 22:59:52.877 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.writeMarkdown(..)
-2025-07-27 22:59:52.881 [Test worker] INFO  o.e.s.r.LocalMarkdownRepository - Markdown을 저장했습니다
-2025-07-27 22:59:52.883 [Test worker] INFO  o.e.s.r.LocalMarkdownRepository - writeMarkdown() 레파지토리 실행
-2025-07-27 22:59:52.889 [Test worker] DEBUG o.e.s.r.LocalMarkdownRepository - writeMarkdown() 실행 전 fileName = test2.md
-2025-07-27 22:59:52.889 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [END] LocalMarkdownRepository.writeMarkdown(..) (11 ms)
-2025-07-27 23:02:51.705 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5239 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 23:02:51.707 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 23:02:53.293 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 23:02:53.448 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 23:02:53.513 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 2.134 seconds (process running for 3.45)
-2025-07-27 23:02:54.343 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.listMarkdown()
-2025-07-27 23:02:54.345 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [END] LocalMarkdownRepository.listMarkdown() (1 ms)
-2025-07-27 23:02:54.347 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - []
-2025-07-27 23:05:43.293 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5297 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 23:05:43.294 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 23:05:44.713 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 23:05:44.852 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 23:05:44.915 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.903 seconds (process running for 3.077)
-2025-07-27 23:05:45.604 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.listMarkdown()
-2025-07-27 23:05:45.607 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [END] LocalMarkdownRepository.listMarkdown() (1 ms)
-2025-07-27 23:05:45.608 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - [test2.md, test.md]
-2025-07-27 23:11:24.451 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5377 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 23:11:24.454 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 23:11:25.762 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 23:11:25.957 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 23:11:26.027 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.866 seconds (process running for 3.094)
-2025-07-27 23:11:26.752 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.deleteMarkdown(..)
-2025-07-27 23:11:26.760 [Test worker] WARN  o.e.s.r.LocalMarkdownRepository - 삭제할 마크다운 파일이 존재하지 않습니다: test3.md
-2025-07-27 23:11:39.167 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5387 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 23:11:39.168 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 23:11:40.469 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 23:11:40.612 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 23:11:40.680 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.79 seconds (process running for 2.821)
-2025-07-27 23:11:41.384 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.deleteMarkdown(..)
-2025-07-27 23:11:41.391 [Test worker] WARN  o.e.s.r.LocalMarkdownRepository - 삭제할 마크다운 파일이 존재하지 않습니다: test2
-2025-07-27 23:11:54.120 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 5399 (started by leeinwon in /Users/leeinwon/git/self_introduction)
-2025-07-27 23:11:54.122 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
-2025-07-27 23:11:55.523 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2025-07-27 23:11:55.666 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
-2025-07-27 23:11:55.721 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.896 seconds (process running for 3.011)
-2025-07-27 23:11:56.406 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.deleteMarkdown(..)
-2025-07-27 23:11:56.412 [Test worker] INFO  o.e.s.r.LocalMarkdownRepository - 마크다운 파일을 삭제했습니다: test2.md
-2025-07-27 23:11:56.413 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [END] LocalMarkdownRepository.deleteMarkdown(..) (6 ms)
+2025-10-20 21:38:16.648 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 13080 (started by leeinwon in /Users/leeinwon/git/self_introduction)
+2025-10-20 21:38:16.653 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 21:38:18.025 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-20 21:38:18.200 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-10-20 21:38:18.259 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.883 seconds (process running for 3.236)
+2025-10-20 21:38:19.076 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [START] LocalMarkdownRepository.getMarkdown(..)
+2025-10-20 21:38:19.078 [Test worker] INFO  o.e.s.aspect.LoggingAspect - [END] LocalMarkdownRepository.getMarkdown(..) (0 ms)
+2025-10-20 21:56:14.061 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Starting LocalMarkdownRepositoryTests using Java 17.0.15 with PID 15004 (started by leeinwon in /Users/leeinwon/git/self_introduction)
+2025-10-20 21:56:14.063 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - No active profile set, falling back to 1 default profile: "default"
+2025-10-20 21:56:15.367 [Test worker] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-10-20 21:56:15.478 [Test worker] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2025-10-20 21:56:15.529 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - Started LocalMarkdownRepositoryTests in 1.809 seconds (process running for 3.173)
+2025-10-20 21:56:16.387 [Test worker] INFO  o.e.s.r.LocalMarkdownRepositoryTests - [test.md]
